@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+    
+<header>
+<div class="container">
+    <nav>
+        <div class="logo">Trabook <span>☕</span></div>
+    
+        <div class="nav-menu">
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Destination</a>
+          <a href="#">Tour</a>
+          <a href="#">Blog</a>
+        </div>
+    
+        <div class="nav-actions">
+          <button class="login">Login</button>
+          <button class="signup">Sign up</button>
+        </div>
+    
+        <div class="hamburger" onclick="toggleMobileMenu()">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </nav>
+    
+       <div class="mobile-menu" id="mobileMenu">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Destination</a>
+        <a href="#">Tour</a>
+        <a href="#">Blog</a>
+        <button class="login">Login</button>
+        <button class="signup">Sign up</button> 
+      </div>
+
+      <div class="hero">
+        <div class="hero-collum1">
+            <div class="hcollum-text">
+                <h1>Get started your  exciting <span>journey</span> with us.</h1>
+                <p>A Team of experienced tourism professionals will provide you with the best advice and tips for your desire place. </p>
+                <a href="">Discover Now</a>
+            </div>
+        </div>
+        <div class="hero-collum2">
+            <div class="hcollum-image">
+                <img src="images/Image.png" alt="">
+            </div>
+        </div>
+    </div>
+    
+    <div class="search-bar">
+      
+   <div class="search-item">
+       <select name="sujay" id="">
+        <option value="">location</option>
+        <option value="">contact</option>
+        <option value="">value</option>
+       </select>
+        <p>When you will go</p>
+      </div>
+       <div class="search-item">
+       <select name="sujay" id="">
+        <option value="">Date</option>
+        <option value="">contact</option>
+        <option value="">value</option>
+       </select>
+        <p>When you will go</p>
+      </div>
+         <div class="search-item">
+       <select name="sujay" id="">
+        <option value="">Guest</option>
+        <option value="">contact</option>
+        <option value="">value</option>
+       </select>
+        <p>When you will go</p>
+      </div>
+      
+      <button class="search-btn">Explore Now</button>
+    </div>
+    
+
+</div>
+</header>
+
+<main>
+  <section class="todo-section">
+    <div class="container">
+    <div class="todo-header">
+      <h2>Things you need <span>to do</span></h2>
+      <p>We ensure that you’ll embark on a perfectly planned, safe vacation at a price you can afford.</p>
+    </div>
+  
+    <div class="todo-cards">
+      <div class="todo-card">
+        <div class="icon orange"><i class="fa-solid fa-user-plus"></i></div>
+        <h3>Sign Up</h3>
+        <p>Completes all the work associated with planning and processing</p>
+      </div>
+  
+      <div class="todo-card">
+        <div class="icon blue"><i class="fa-solid fa-money-bill-1"></i></div>
+        <h3>Worth of Money</h3>
+        <p>After successful access then book from exclusive deals & pricing</p>
+      </div>
+  
+      <div class="todo-card">
+        <div class="icon yellow"><i class="fa-solid fa-earth-americas"></i></div>
+        <h3>Exciting Travel</h3>
+        <p>Start and explore a wide range of exciting travel experience.</p>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  
+
+  <section class="deals-section">
+    <div class="container">
+    <div class="deals-header">
+      <h2>Exclusive <span>deals & discounts</span></h2>
+      <p>Discover our fantastic early booking discounts<br>& start planning your journey.</p>
+    </div>
+  
+    <div class="deals-cards">
+      <!-- Card -->
+      <div class="deal-card">
+        <img src="images/Image (1).png" alt="Madrid">
+        <div class="deal-info">
+          <div class="deal-title">
+            <h3>Madrid</h3>
+            <span class="star"><i class="fa-solid fa-star"></i> 4.8</span>
+          </div>
+          <p class="location"><i class="fa-solid fa-location-dot"></i> Spain</p>
+          <p class="price"><span class="old">$950</span><span class="new">$850</span></p>
+        </div>
+      </div>
+  
+      <!-- Card -->
+      <div class="deal-card">
+        <img src="images/Image (2).png" alt="Firenze">
+        <button class="book-btn">Book Now</button>
+        <div class="deal-info">
+          <div class="deal-title">
+            <h3>Firenze</h3>
+            <span class="star"><i class="fa-solid fa-star"></i> 4.5</span>
+          </div>
+          <p class="location"><i class="fa-solid fa-location-dot"></i> Italy</p>
+          <p class="price"><span class="old">$850</span><span class="new">$750</span></p>
+        </div>
+      </div>
+  
+      <!-- Card -->
+      <div class="deal-card">
+        <img src="images/Image (3).png" alt="Paris">
+        <div class="deal-info">
+          <div class="deal-title">
+            <h3>Paris</h3>
+            <span class="star"><i class="fa-solid fa-star"></i> 4.4</span>
+          </div>
+          <p class="location"><i class="fa-solid fa-location-dot"></i> France</p>
+          <p class="price"><span class="old">$699</span><span class="new">$599</span></p>
+        </div>
+      </div>
+  
+      <!-- Card -->
+      <div class="deal-card">
+        <img src="images/Image (4).png" alt="London">
+        <div class="deal-info">
+          <div class="deal-title">
+            <h3>London</h3>
+            <span class="star"><i class="fa-solid fa-star"></i> 4.8</span>
+          </div>
+          <p class="location"><i class="fa-solid fa-location-dot"></i> UK</p>
+          <p class="price"><span class="old">$850</span><span class="new">$850</span></p>
+        </div>
+      </div>
+    </div>
+  
+    <div class="navigation">
+      <button class="nav-btn">←</button>
+      <button class="nav-btn active">→</button>
+    </div>
+    </div>
+  </section>
+
+
+  <section class="vacation-section">
+    <div class="container">
+    <div class="vacation-header">
+      <h2>Best <span>vacation plan</span></h2>
+      <p>
+        Plan your perfect vacation with our travel agency. Choose<br>
+        among hundreds of all-inclusive offers!
+      </p>
+    </div>
+  
+    <div class="vacation-cards">
+      <!-- Card 1 -->
+      <div class="vacation-card">
+        <img src="images/Image (11).png" alt="Rome">
+        <div class="vacation-content">
+          <div class="card-top">
+            <h3>Rome, Italy</h3>
+            <span class="price">$5,42k</span>
+          </div>
+          <div class="card-bottom">
+            <span><i class="fa-solid fa-location-dot"></i> 10 Days Trip</span>
+            <span><i class="fa-solid fa-star"></i> 4.8</span>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Card 2 -->
+      <div class="vacation-card">
+        <img src="images/Image (6).png" alt="London">
+        <div class="vacation-content">
+          <div class="card-top">
+            <h3>London, UK</h3>
+            <span class="price">$2,42k</span>
+          </div>
+          <div class="card-bottom">
+            <span><i class="fa-solid fa-location-dot"></i> 07 Days Trip</span>
+            <span><i class="fa-solid fa-star"></i> 4.7</span>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Card 3 -->
+      <div class="vacation-card">
+        <img src="images/Image (7).png" alt="Osaka">
+        <div class="vacation-content">
+          <div class="card-top">
+            <h3>Osaka, Japan</h3>
+            <span class="price">$5,42k</span>
+          </div>
+          <div class="card-bottom">
+            <span><i class="fa-solid fa-location-dot"></i> 10 Days Trip</span>
+            <span><i class="fa-solid fa-star"></i> 4.8</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="vacation-nav">
+      <button class="nav-btn">←</button>
+      <button class="nav-btn active">→</button>
+    </div>
+    </div>
+  </section>
+
+
+  <section class="testimonial-section">
+    <div class="container">
+    <div class="testimonial-left">
+      <h2>What people say <span>about us.</span></h2>
+      <p>Our Clients send us bunch of smilies with our services and we love them.</p>
+      <div class="testimonial-buttons">
+        <button class="arrow-btn">←</button>
+        <button class="arrow-btn active">→</button>
+      </div>
+    </div>
+  
+    <div class="testimonial-right">
+      <div class="testimonial-box">
+        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="User" class="avatar">
+        <div class="testimonial-content">
+          <p>“On the Windows talking painted pasture yet its express parties use. Sure last upon he same as knew next. Of believed or diverted no.”</p>
+          <h4>Mike taylor</h4>
+          <span>Lahore, Pakistan</span>
+        </div>
+      </div>
+      <div class="testimonial-shadow">
+        <p>Chris Thomas<br><span>CEO of Red Button</span></p>
+      </div>
+    </div>
+    
+    </div>
+  </section>
+
+  <section class="blog-section">
+    
+    <h2>Get update with <span>latest blog</span></h2>
+  
+    <div class="blog-cards">
+      <div class="card">
+        <img src="images/Image (9).png" alt="Blog 1">
+        <h3>The Amazing Difference a Year of Travelling .</h3>
+        <p class="date">July 27, 2021</p>
+      </div>
+  
+      <div class="card">
+        <img src="images/Image (10).png" alt="Blog 2">
+        <h3>Travel far enough, you meet yourself.</h3>
+        <p class="date">July 27, 2021</p>
+      </div>
+  
+      <div class="card">
+        <img src="images/Image (11).png" alt="Blog 3">
+        <h3>How to Save Money While Visiting Africa .</h3>
+        <p class="date">July 27, 2021</p>
+      </div>
+  
+      <div class="card">
+        <img src="images/Image (12).png" alt="Blog 4">
+        <h3>Reflections on 5 Months of Travel: Time to Hang</h3>
+        <p class="date">July 27, 2021</p>
+      
+    </div>
+  
+    <div class="pagination-dots">
+      <span></span>
+      <span class="active"></span>
+      <span></span>
+    </div>
+    </div>
+  </section>
+
+  <section class="subscribe-section">
+    <div class="container">
+    <div class="subscribe-content">
+      <h2>Subscribe and get exclusive <br>deals & offer</h2>
+      
+      <form class="subscribe-form">
+        <input type="email" placeholder="Enter your mail" required>
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-links">
+
+<div>
+      <div class="footer-brand">
+      <h2>Trabook <span>🌐</span></h2>
+      <p>Book your trip in minute, get full<br>control for much longer.</p>
+      <div class="social-icons">
+        <a href="#"><i class="fa-brands fa-facebook"></i></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></i></a>
+      </div>
+    </div>
+</div>
+
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Logistic</a></li>
+          <li><a href="#">Privacy & Policy</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="#">Help/FAQ</a></li>
+          <li><a href="#">Press</a></li>
+          <li><a href="#">Affiliates</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>More</h4>
+        <ul>
+          <li><a href="#">Press Centre</a></li>
+          <li><a href="#">Our Blog</a></li>
+          <li><a href="#">Low fare tips</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>Copyright, Trabook 2022. All rights reserved.</p>
+    <a href="#">Terms & Conditions</a>
+  </div>
+</footer>
+
+
+
+
+
+
+
+
+<script>
+    function toggleMobileMenu() {
+      document.getElementById("mobileMenu").classList.toggle("active");
+    }
+  </script>
+
+    
+</body>
+</html>
+
+
